@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const conntroller = require("../controllers/Hosting");
-// This is Hosting router
+const conntroller = require("../controllers/Cefr");
+// This is Ielts router
 router.route("/").get(conntroller.Get);
-
+router.route("/count").get(conntroller.Count);
 module.exports = router;

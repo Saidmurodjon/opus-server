@@ -1,5 +1,5 @@
 const AdminBro = require("admin-bro");
-const Workers = require("../../models/Workers");
+const Post = require("../../models/Ielts");
 
 const {
   after: passwordAfterHook,
@@ -13,9 +13,9 @@ const {
 
 /** @type {AdminBro.ResourceOptions} */
 const options = {
-  resource: Workers,
+  resource: Post,
   options: {
-    parent: { name: "Our Team" },
+    parent: { name: "Our Results" },
     properties: {
       _id: { isVisible: false },
     },

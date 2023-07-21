@@ -5,13 +5,11 @@ const router = express.Router();
 const users = require("./User");
 
 const login = require("../auth/Router");
-const whois = require("./WhoIs");
-const pochta = require("./Pochta");
-const hosting = require("./Hosting");
 const orders = require("./Order");
 const workers = require("./Workers");
+const cefr = require("./Cefr");
 const ielts = require("./Ielts");
-const hostingcreators = require("./NewHostingCreator");
+const sat = require("./Sat");
 const contact = require("./Contact");
 const auth = require("./Auth");
 const Authentication = require("../middlewares/Authentication");
@@ -21,15 +19,13 @@ router.get("/", (req, res) => {
 });
 router.use("/login", login);
 router.use("/users", users);
-router.use("/whois", whois);
-router.use("/pochtas", pochta);
-router.use("/hostings", hosting);
 router.use("/orders", orders);
 router.use("/workers", workers);
+router.use("/cefr", cefr);
 router.use("/ielts", ielts);
-router.use("/hostingcreators", hostingcreators);
+router.use("/sat", sat);
 router.use("/contacts", contact);
 router.use(Authentication);
 
-router.use("/auth",auth);
+router.use("/auth", auth);
 module.exports = router;

@@ -1,0 +1,60 @@
+2023-07-15T18:06:48.66469Z	Cloning repository...
+2023-07-15T18:06:49.496172Z	From https://github.com/Saidmurodjon/opus
+2023-07-15T18:06:49.49683Z	 * branch            ef72a15ab0f318394ada717ee7f1555a2f94aaeb -> FETCH_HEAD
+2023-07-15T18:06:49.497036Z	
+2023-07-15T18:06:49.568267Z	HEAD is now at ef72a15 initial commit
+2023-07-15T18:06:49.568839Z	
+2023-07-15T18:06:49.686021Z	
+2023-07-15T18:06:49.71692Z	Success: Finished cloning repository files
+2023-07-15T18:06:50.383545Z	Detected the following tools from environment: npm@9.5.1, nodejs@18.16.1
+2023-07-15T18:06:50.384312Z	Installing project dependencies: npm clean-install --progress=false
+2023-07-15T18:06:53.269773Z	npm ERR! code EUSAGE
+2023-07-15T18:06:53.275493Z	npm ERR! 
+2023-07-15T18:06:53.275793Z	npm ERR! `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+2023-07-15T18:06:53.275998Z	npm ERR! 
+2023-07-15T18:06:53.276141Z	npm ERR! Invalid: lock file's ajv@6.12.6 does not satisfy ajv@8.12.0
+2023-07-15T18:06:53.276301Z	npm ERR! Missing: ajv@6.12.6 from lock file
+2023-07-15T18:06:53.276434Z	npm ERR! Invalid: lock file's json-schema-traverse@0.4.1 does not satisfy json-schema-traverse@1.0.0
+2023-07-15T18:06:53.276588Z	npm ERR! Missing: @popperjs/core@2.11.8 from lock file
+2023-07-15T18:06:53.276719Z	npm ERR! Missing: ajv@6.12.6 from lock file
+2023-07-15T18:06:53.276869Z	npm ERR! Missing: typescript@4.9.5 from lock file
+2023-07-15T18:06:53.277005Z	npm ERR! Missing: ajv@6.12.6 from lock file
+2023-07-15T18:06:53.27722Z	npm ERR! Missing: ajv-keywords@3.5.2 from lock file
+2023-07-15T18:06:53.277391Z	npm ERR! Missing: json-schema-traverse@0.4.1 from lock file
+2023-07-15T18:06:53.277536Z	npm ERR! Missing: ajv@6.12.6 from lock file
+2023-07-15T18:06:53.277665Z	npm ERR! Missing: ajv-keywords@3.5.2 from lock file
+2023-07-15T18:06:53.27781Z	npm ERR! Missing: json-schema-traverse@0.4.1 from lock file
+2023-07-15T18:06:53.277938Z	npm ERR! Missing: json-schema-traverse@0.4.1 from lock file
+2023-07-15T18:06:53.278108Z	npm ERR! Missing: ajv@6.12.6 from lock file
+2023-07-15T18:06:53.278278Z	npm ERR! Missing: ajv-keywords@3.5.2 from lock file
+2023-07-15T18:06:53.278413Z	npm ERR! Missing: json-schema-traverse@0.4.1 from lock file
+2023-07-15T18:06:53.278549Z	npm ERR! Missing: json-schema-traverse@0.4.1 from lock file
+2023-07-15T18:06:53.278677Z	npm ERR! 
+2023-07-15T18:06:53.278813Z	npm ERR! Clean install a project
+2023-07-15T18:06:53.278944Z	npm ERR! 
+2023-07-15T18:06:53.279079Z	npm ERR! Usage:
+2023-07-15T18:06:53.279256Z	npm ERR! npm ci
+2023-07-15T18:06:53.27941Z	npm ERR! 
+2023-07-15T18:06:53.279561Z	npm ERR! Options:
+2023-07-15T18:06:53.279757Z	npm ERR! [-S|--save|--no-save|--save-prod|--save-dev|--save-optional|--save-peer|--save-bundle]
+2023-07-15T18:06:53.279918Z	npm ERR! [-E|--save-exact] [-g|--global]
+2023-07-15T18:06:53.280062Z	npm ERR! [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+2023-07-15T18:06:53.28023Z	npm ERR! [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+2023-07-15T18:06:53.280373Z	npm ERR! [--strict-peer-deps] [--no-package-lock] [--foreground-scripts]
+2023-07-15T18:06:53.280512Z	npm ERR! [--ignore-scripts] [--no-audit] [--no-bin-links] [--no-fund] [--dry-run]
+2023-07-15T18:06:53.280641Z	npm ERR! [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+2023-07-15T18:06:53.280785Z	npm ERR! [-ws|--workspaces] [--include-workspace-root] [--install-links]
+2023-07-15T18:06:53.280917Z	npm ERR! 
+2023-07-15T18:06:53.281043Z	npm ERR! aliases: clean-install, ic, install-clean, isntall-clean
+2023-07-15T18:06:53.281215Z	npm ERR! 
+2023-07-15T18:06:53.281366Z	npm ERR! Run "npm help ci" for more info
+2023-07-15T18:06:53.281503Z	
+2023-07-15T18:06:53.281642Z	npm ERR! A complete log of this run can be found in:
+2023-07-15T18:06:53.28181Z	npm ERR!     /opt/buildhome/.npm/_logs/2023-07-15T18_06_51_670Z-debug-0.log
+2023-07-15T18:06:53.292593Z	Error: Exit with error code: 1
+2023-07-15T18:06:53.292843Z	    at ChildProcess.<anonymous> (/snapshot/dist/run-build.js)
+2023-07-15T18:06:53.293048Z	    at Object.onceWrapper (node:events:652:26)
+2023-07-15T18:06:53.293236Z	    at ChildProcess.emit (node:events:537:28)
+2023-07-15T18:06:53.293412Z	    at ChildProcess._handle.onexit (node:internal/child_process:291:12)
+2023-07-15T18:06:53.30104Z	Failed: build command exited with code: 1
+2023-07-15T18:06:54.196988Z	Failed: error occurred while running build command

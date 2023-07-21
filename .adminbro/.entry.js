@@ -7,3 +7,7 @@ import Component3 from '../src/api/v1/admin/components/profil-photo-edit'
 AdminBro.UserComponents.Component3 = Component3
 import Component4 from '../src/api/v1/admin/components/upload-image.list'
 AdminBro.UserComponents.Component4 = Component4
+import Component5 from '../src/api/v1/admin/components/profil-photo-edit'
+AdminBro.UserComponents.Component5 = Component5
+import Component6 from '../src/api/v1/admin/components/upload-image.list'
+AdminBro.UserComponents.Component6 = Component6

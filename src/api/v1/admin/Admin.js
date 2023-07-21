@@ -16,11 +16,9 @@ const ADMIN = {
 const User = require("../models/User");
 const Order = require("../models/Order");
 const Contact = require("../models/Contact");
-const Pochta = require("../models/Pochta");
-const Hosting = require("../models/Hosting");
-const Workers = require("./uploader/WorkerUploader");
-const Products = require("./uploader/ProductUploader");
-const NewHostingCreator = require("../models/NewHostingCreator");
+const SatUploader = require("./uploader/SatUploader");
+const IeltsUploader = require("./uploader/IeltsUploader");
+const CefrUploader = require("./uploader/CefrUploader");
 
 AdminBro.registerAdapter(mongooseAdminBro);
 const AdminBroOptions = {
@@ -34,15 +32,7 @@ const AdminBroOptions = {
         },
       },
     },
-    {
-      resource: Pochta,
-      options: {
-        parent: { name: "Products" },
-        properties: {
-          _id: { isVisible: false },
-        },
-      },
-    },
+   
     {
       resource: Order,
       options: {
@@ -55,24 +45,8 @@ const AdminBroOptions = {
         },
       },
     },
-    {
-      resource: Hosting,
-      options: {
-        parent: { name: "Products" },
-        properties: {
-          _id: { isVisible: false },
-        },
-      },
-    },
-    {
-      resource: NewHostingCreator,
-      options: {
-        parent: { name: "Products" },
-        properties: {
-          _id: { isVisible: false },
-        },
-      },
-    },
+
+ 
     {
       resource: Contact,
       options: {
@@ -84,11 +58,12 @@ const AdminBroOptions = {
         },
       },
     },
-    Workers,
-    Products,
+    CefrUploader,
+    IeltsUploader,
+    SatUploader,
   ],
   branding: {
-    companyName: "FVH",
+    companyName: "Opus",
     softwareBrothers: false,
     logo: "/public/images/logo.png",
     favicon: "/public/images/logo.png",
@@ -99,7 +74,7 @@ const AdminBroOptions = {
         loginWelcome: "Administration Panel - Login", // the smaller text
       },
       labels: {
-        loginWelcome: "DDEK.UZ", // this could be your project name
+        loginWelcome: "OPUS.UZ", // this could be your project name
       },
     },
   },
